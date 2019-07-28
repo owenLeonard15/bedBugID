@@ -5,9 +5,7 @@ const { width: winWidth, height: winHeight } = Dimensions.get('window');
 export default StyleSheet.create({
     backArrow: {
         color: 'white',
-        backgroundColor: 'blue',
-        margin: 30,
-        width: 30
+        width: 50
     },
     buttonRow:{
         display: 'flex',
@@ -18,10 +16,12 @@ export default StyleSheet.create({
     },
     buttonRow2:{
         display: 'flex',
-        justifyContent: 'space-around',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
         flexDirection: 'row',
-        marginTop: 300,
-        marginBottom: 30 
+        width: winWidth,
+        marginTop: -70,
+        marginLeft: 30
     },
     cameraFlip:{
         color: 'white',
@@ -35,7 +35,26 @@ export default StyleSheet.create({
         flex: 1,
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'flex-end'
+        justifyContent: 'flex-end',
+        width: winWidth,
+        height: winHeight,
+        backgroundColor: 'purple',
+        margin: 0
+    },
+    page2Style:{
+        flex: 1,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: winWidth,
+        height: winHeight,
+        backgroundColor: 'black',
+        margin: 0
+    },
+    picPreview:{
+       width: '100%',
+       height: '100%'
     },
     photoLibrary:{
         color: 'white',

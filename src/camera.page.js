@@ -85,13 +85,13 @@ export default class CameraPage extends React.Component {
             );
         }
         else{
-        //photo has been taken
             return (
-                <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'center'}}>
-                    <Image style={{flex: 1, height: 50}} source={{uri: `${this.state.photoURI}`}} />
-                    <View style={styles.buttonRow}>
-                        <TouchableOpacity onPress={this.unsnap}>
+                <View style={styles.page2Style}>
+                    <Image style={styles.picPreview} source={{uri: `${this.state.photoURI}`}} />
+                    <View style={styles.buttonRow2}>
+                        <TouchableOpacity style={styles.buttonRow2} onPress={this.unsnap}>
                             <Ionicons name='ios-arrow-back' size={50} style={styles.backArrow}  />
+                            <Text style={{color: 'white', fontSize: 30}}>Camera</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
