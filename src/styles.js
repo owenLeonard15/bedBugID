@@ -15,13 +15,24 @@ export default StyleSheet.create({
         marginBottom: 30
     },
     buttonRow2:{
+        position: 'absolute',
+        bottom: 20,
+        left: 20,
         display: 'flex',
         justifyContent: 'flex-start',
         alignItems: 'center',
         flexDirection: 'row',
         width: winWidth,
-        marginTop: -70,
-        marginLeft: 30
+    },
+    buttonRow3:{
+        position: 'absolute',
+        bottom: .5 * winHeight,
+        left: .45 * winWidth,
+        display: 'flex',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        flexDirection: 'row',
+        width: winWidth,
     },
     cameraFlip:{
         color: 'white',
@@ -38,7 +49,7 @@ export default StyleSheet.create({
         justifyContent: 'flex-end',
         width: winWidth,
         height: winHeight,
-        backgroundColor: 'purple',
+        backgroundColor: 'black',
         margin: 0
     },
     page2Style:{
@@ -49,8 +60,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         width: winWidth,
         height: winHeight,
-        backgroundColor: 'black',
-        margin: 0
+        backgroundColor: 'black'
     },
     picPreview:{
        width: '100%',
