@@ -7,6 +7,16 @@ export default StyleSheet.create({
         color: 'white',
         width: 50
     },
+    badBug: {
+        color: 'white', 
+        backgroundColor: 'red', 
+        borderColor: 'white',
+        borderWidth: 2,
+        borderRadius: 10,
+        fontSize: 30,
+        overflow: 'hidden',
+        padding: 20
+    },
     buttonRow:{
         display: 'flex',
         justifyContent: 'space-around',
@@ -27,10 +37,10 @@ export default StyleSheet.create({
     buttonRow3:{
         position: 'absolute',
         bottom: .5 * winHeight,
-        left: .45 * winWidth,
+        left: 0,
         display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
         flexDirection: 'row',
         width: winWidth,
     },
@@ -41,6 +51,16 @@ export default StyleSheet.create({
     circleButton:{
         color: 'white',
         margin: 10
+    },
+    goodBug:{
+        color: 'white', 
+        backgroundColor: 'green', 
+        borderColor: 'white',
+        borderWidth: 2,
+        borderRadius: 10,
+        fontSize: 30,
+        overflow: 'hidden',
+        padding: 20
     },
     pageStyle:{
         flex: 1,

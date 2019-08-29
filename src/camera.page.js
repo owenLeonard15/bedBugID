@@ -123,7 +123,12 @@ export default class CameraPage extends React.Component {
                     :
                     <>
                     <View style={styles.buttonRow3}>
-                      <Text style={{color: 'white', fontSize: 30, marginLeft: -20}}>{this.state.predictionData}</Text>
+                      {this.state.predictionData === 'notbedbug'
+                        ?
+                        <Text style={styles.goodBug}>This bug is harmless</Text>
+                        :
+                        <Text style={styles.badBug}>We recommend you call an exterminator</Text>
+                      }
                     </View> 
                     <View style={styles.buttonRow2}>
                         <TouchableOpacity style={styles.buttonRow2} onPress={this.unsnap}>
